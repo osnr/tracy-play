@@ -1,2 +1,2 @@
 tracy-play: tracy-play.c
-	c++ -I./tracy/public -o tracy-play tracy/public/TracyClient.cpp $^
+	c++ -DTRACY_ENABLE=1 -std=c++20 -I./tracy/public -o tracy-play tracy/public/TracyClient.cpp $^
