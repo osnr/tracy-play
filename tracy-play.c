@@ -9,7 +9,7 @@ int main() {
     for (;;) {
         sleep(2);
 
-        TracyCZoneN(ctx, kShortSleep, strlen(kShortSleep));
+        TracyCZoneN(ctx, kShortSleep, 1);
         sleep(1);
         TracyCZoneEnd(ctx);
 
